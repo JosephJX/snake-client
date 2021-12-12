@@ -10,6 +10,10 @@ const connect = function () {
   conn.on("connect", () => {
       console.log("Connection established")
   });
+  conn.on('connection', (client) => {
+    console.log('New client connected!');
+    client.write('Name: JJM');
+  });
 
   conn.on("data", (data) => {
     console.log(data)
