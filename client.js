@@ -14,6 +14,16 @@ const connect = function () {
     console.log('New client connected!');
     client.write('Name: JJM');
   });
+  
+  // setInterval( func = () => {
+  //     conn.write("Move: up");
+  //   }, 100);
+
+  // setInterval( func = () => {
+    //   conn.write("Move: down");
+    // }, 600);
+  
+  
 
   conn.on("data", (data) => {
     console.log(data)
