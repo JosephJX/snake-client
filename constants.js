@@ -11,6 +11,6 @@ module.exports = {
   PORT,
   UPKEY,
   LEFTKEY,
-  DOWNKEY,
-  RIGHTKEY
+  RIGHTKEY,
+  DOWNKEY
 };
