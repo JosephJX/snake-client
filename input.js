@@ -1,5 +1,11 @@
 let connection;
 
+const msg = "Say: ";
+const greeting = "Hey whats up?";
+const question = "whats your name? where you from?";
+const challenge = "wanna race?";
+
+
 const setupInput = (conn) => {
   connection = conn;
 
@@ -30,7 +36,7 @@ const handleUserInput = (key) => {
   if (key === 'd') {
     connection.write("Move: right");
   }
-}ß
+
 };
 module.exports = { setupInput }; 
 
